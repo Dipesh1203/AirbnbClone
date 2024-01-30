@@ -81,22 +81,6 @@ app.use((req, res, next) => {
   next();
 });
 
-//test
-// app.use("/demouser", async (req, res) => {
-//   let fakeUser = new User({
-//     email: "studentalpha@gmail.com",
-//     username: "Aplha-Student-12",
-//   });
-//   //user ,password
-//   let registerUser = await User.register(fakeUser, "hello");
-//   res.send(registerUser);
-// });
-
-//Routes
-app.get("/", (req, res) => {
-  res.send("Hi welcome to my page Website is under construction");
-});
-
 //server side validation
 
 app.use("/listings", listingsRouter);
